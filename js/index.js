@@ -178,7 +178,8 @@ const buildOption = data => {
 };
 
 const fetchData = async () => {
-  const res = await fetch(`https://api.huobi.pro/market/history/kline?period=1day&size=200&symbol=btcusdt`)
+  // const res = await fetch(`https://api.huobi.pro/market/history/kline?period=1day&size=200&symbol=btcusdt`)
+  const res = await fetch(`https://api.lsong.one:8443/huobi/market/history/kline?period=1day&size=200&symbol=btcusdt`)
   const data = await res.json();
   const categories = [], values = [], volumes = [];
   for (const row of data.data.sort((a, b) => a.id - b.id)) {
