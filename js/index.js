@@ -1,5 +1,5 @@
 import { ready } from 'https://lsong.org/scripts/dom.js';
-import { format } from 'https://lsong.org/scripts/date.js';
+import { format } from 'https://lsong.org/scripts/time.js';
 import * as echarts from 'https://unpkg.com/echarts@5.4.1/dist/echarts.esm.js'
 
 // function splitData(rawData) {
